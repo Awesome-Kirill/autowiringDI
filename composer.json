@@ -1,0 +1,15 @@
+{
+    "name": "ka.stulnikov/autowiring-di",
+    "description": "autowiringDI",
+    "type": "library",
+    "require": {
+        "psr/container": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kirill",
+            "email": "ka.stulnikov@gmail.com"
+        }
+    ]
+}
