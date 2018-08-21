@@ -33,12 +33,12 @@ class Andy{
     }
 }
 
-class  Xuy{
+class  Buzz{
 
 }
 class Aazzzz{}
 class Basas{}
-class  Pizda{
+class  Fuz{
     public function __construct(Andy $andy)
     {
     }
@@ -66,7 +66,7 @@ class TesaAndy{
 }
 class ReflTest
 {
-    public function __construct(Xuy $as, Dzigurda $asd, TesaAndy $sasda, Pizda $sad )
+    public function __construct(Buzz $as, Dzigurda $asd, TesaAndy $sasda, Fuz $sad )
     {
     }
 }
@@ -75,8 +75,6 @@ class ReflTest
 $arrayContainer = [];
 
 function reflectionRecur(string $classsR, array &$arr){
-
-
     $reflClasss = new \ReflectionClass($classsR);
     // Проверяем есть ли конструткор. Если нету то Создаем класс
    if ($reflClasss->hasMethod('__construct')){
