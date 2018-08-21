@@ -1,16 +1,6 @@
 <?php
 
 
-
-namespace AutowiringDI;
-
-use Psr\Container\ContainerExceptionInterface as ContainerExceptionInterface;
-
-
-class Tests implements ContainerExceptionInterface{
-
-}
-/*
 function getSillArray(array $map, array $key){
     $newArray = [];
     foreach ($key as $k){
@@ -133,4 +123,3 @@ function reflectionRecur(string $classsR, array &$arr){
 (reflectionRecur('ReflTest',$arrayContainer));
 var_dump($arrayContainer['ReflTest']);
 
-*/
