@@ -1,61 +1,16 @@
 <?php
 
-namespace Psr\Container;
-
-/**
- * Describes the interface of a container that exposes methods to read its entries.
- */
-interface ContainerInterface
-{
-    /**
-     * Finds an entry of the container by its identifier and returns it.
-     *
-     * @param string $id Identifier of the entry to look for.
-     *
-     * @throws NotFoundExceptionInterface  No entry was found for **this** identifier.
-     * @throws ContainerExceptionInterface Error while retrieving the entry.
-     *
-     * @return mixed Entry.
-     */
-    public function get($id);
-
-    /**
-     * Returns true if the container can return an entry for the given identifier.
-     * Returns false otherwise.
-     *
-     * `has($id)` returning true does not mean that `get($id)` will not throw an exception.
-     * It does however mean that `get($id)` will not throw a `NotFoundExceptionInterface`.
-     *
-     * @param string $id Identifier of the entry to look for.
-     *
-     * @return bool
-     */
-    public function has($id);
-}
-
-/**
- * Base interface representing a generic exception in a container.
- */
-interface ContainerExceptionInterface
-{
-}
-
-interface NotFoundExceptionInterface extends ContainerExceptionInterface
-{
-}
 
 
-class DIContainer
-{
+namespace AutowiringDI;
+
+use Psr\Container\ContainerExceptionInterface as ContainerExceptionInterface;
 
 
-
+class Tests implements ContainerExceptionInterface{
 
 }
-
-
-//var_dump(array_values(array_intersect_key($array1, array_flip($array2))));
-
+/*
 function getSillArray(array $map, array $key){
     $newArray = [];
     foreach ($key as $k){
@@ -132,7 +87,7 @@ $arrayContainer = [];
 function reflectionRecur(string $classsR, array &$arr){
 
 
-    $reflClasss = new ReflectionClass($classsR);
+    $reflClasss = new \ReflectionClass($classsR);
     // Проверяем есть ли конструткор. Если нету то Создаем класс
    if ($reflClasss->hasMethod('__construct')){
         /// Получаем все методы констрктора
@@ -178,3 +133,4 @@ function reflectionRecur(string $classsR, array &$arr){
 (reflectionRecur('ReflTest',$arrayContainer));
 var_dump($arrayContainer['ReflTest']);
 
+*/
