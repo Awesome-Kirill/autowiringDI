@@ -8,12 +8,10 @@
 
 namespace AutowiringDI;
 
-
 use Psr\Container\ContainerInterface;
 
 
-
-class Test implements ContainerInterface{
+class AutowiringDI implements ContainerInterface{
 
 
     public $container = [];

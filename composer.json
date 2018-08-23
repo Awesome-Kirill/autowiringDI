@@ -1,6 +1,6 @@
 {
-    "name": "ka.stulnikov/autowiring-di",
-    "description": "autowiringDI",
+    "name": "awesome-kirill/autowiring-di",
+    "description": "AutowiringDI, a simple Dependency Injection Container",
     "type": "library",
     "require": {
         "psr/container": "^1.0"
@@ -8,7 +8,6 @@
     "license": "MIT",
   "autoload": {
     "psr-4": {
-
       "AutowiringDI\\": "src/"
     }
   },
