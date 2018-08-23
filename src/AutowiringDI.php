@@ -6,7 +6,7 @@
  * Time: 13:00
  */
 
-namespace AutowiringDI;
+namespace Container;
 
 use Psr\Container\ContainerInterface;
 

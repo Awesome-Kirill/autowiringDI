@@ -4,14 +4,15 @@
     "type": "library",
     "require": {
         "psr/container": "^1.0"
+
     },
     "license": "MIT",
   "autoload": {
     "psr-4": {
-      "AutowiringDI\\": "src/"
+      "Container\\": "src/"
     }
   },
-  "minimum-stability": "dev",
+
     "authors": [
         {
             "name": "Kirill",
